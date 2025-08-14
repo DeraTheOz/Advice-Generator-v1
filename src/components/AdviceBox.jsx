@@ -24,7 +24,11 @@ export function AdviceBox({ id, advice, isLoading, error, onGetNewAdvice }) {
           type="image/svg+xml"
           media="(min-width: 768px)"
         />
-        <img src="./images/pattern-divider-desktop.svg" alt="divider" />
+        <img
+          src="./images/pattern-divider-desktop.svg"
+          alt="divider"
+          aria-hidden="true"
+        />
       </picture>
 
       <button
@@ -33,7 +37,7 @@ export function AdviceBox({ id, advice, isLoading, error, onGetNewAdvice }) {
         disabled={isLoading}
         className="hover:shadow-3xl absolute translate-x-[-50%] translate-y-[50%] transition-all bg-none border-0 w-[55px] h-[55px] bg-neonGreen rounded-full flex items-center justify-center bottom-0 left-2/4 "
       >
-        <img src="./images/icon-dice.svg" alt="dice icon" />
+        <img src="./images/icon-dice.svg" alt="dice icon" aria-hidden="true" />
       </button>
     </div>
   );
