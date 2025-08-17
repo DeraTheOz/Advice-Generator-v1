@@ -33,7 +33,7 @@ export function FetchAdvice() {
           const errorMessage =
             err.name === "AbortError"
               ? "Request timed out, try again"
-              : "Unable to fetch advice";
+              : "Unable to fetch advice, try again";
           setError(errorMessage);
         }
       } finally {
