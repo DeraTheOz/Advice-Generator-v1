@@ -32,7 +32,7 @@ export function FetchAdvice() {
         if (mounted) {
           const errorMessage =
             err.name === "AbortError"
-              ? "Request timed out"
+              ? "Request timed out, try again"
               : "Unable to fetch advice";
           setError(errorMessage);
         }
